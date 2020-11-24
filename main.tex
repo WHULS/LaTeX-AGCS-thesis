@@ -1,0 +1,49 @@
+\documentclass[]{AGCS}
+
+\begin{document}
+%% ---------- 页眉信息 ---------- %%
+\volumnNo{00}                      % 卷号
+\issueNo{00}                       % 期刊号
+\pubYear{2020}                     % 出版年份
+\pubMonthCn{10}                    % 出版月（中文）
+\pubMonthEn{October}               % 出版月（英文）
+\website{http://xb.sinomaps.com}   % 网址
+\firstAuthor{张\quad 三}           % 第一作者
+\firstAuthorDescriptionCn{张三(1998--),男,硕士,研究方向为xxxxxxxxxxxxxxxx。}
+\firstAuthorDescriptionEn{ZHANG San(1998--), male, MS, majors in xxxxxxxxxxxxxxxx.}
+\firstAuthorEmail{zhangsan@example.com}
+\correspondingAuthorCn{李\quad 四}
+\correspondingAuthorEn{LI Si}
+\correspondingAuthorEmail{lisi@example.com}
+
+%% ---------- 标题 ---------- %%
+\cnTitle{测绘学报\LaTeX{}模板}
+\enTitle{\LaTeX{} Template for Acta Geodaetica et Cartographica Sinica}
+
+%% ---------- 作者 ---------- %%
+\cnAuthor{张\quad 三$^1$,李\quad 四$^{1,2}$,王\quad 五$^{1,2}$,赵小六$^1$,单小七$^1$}
+\enAuthor{Zhang San$^1$,Li Si$^{1,2}$,Wang Wu$^{1,2}$,Zhao Xiaoliu$^1$,Shan Xiaoqi$^1$}
+\cnAuthorUnit{1. 武汉大学测绘遥感信息工程国家重点实验室,湖北 武汉 430079; 2. 地球空间信息协同创新中心,湖北 武汉 430079}
+\enAuthorUnit{1. State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University, Wuhan 430079, China; 2. Collaborative Innovation Center of Geospatial Technology, Wuhan 430079, China}
+
+% 书写中英文标题和作者及其单位
+\makeTitleAndAuthor
+
+%% ---------- 摘要 ---------- %%
+\input{0-abstract}
+
+%% ---------- 正文部分 ---------- %%
+\input{1-introduction}
+\input{2-chapter1}
+\input{3-chapter2}
+\input{4-chapter3}
+\input{5-conclusion}
+
+%% ---------- 参考文献 ---------- %%
+{\zihao{-5} \bibliography{refs}}
+
+
+%% ---------- 作者简介 ---------- %%
+\makeDescription
+
+\end{document}
