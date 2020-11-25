@@ -167,6 +167,7 @@
 %%% 参考文献设置
 \RequirePackage[sort&compress]{natbib}
 \setcitestyle{numbers,square,comma}
+\setlength{\bibsep}{0.0pt}                                              % 参考文献之间的间距
 \ctexset{bibname={参考文献：}}
 \bibliographystyle{unsrt}                                               % 参考文献样式
 \RequirePackage{hyperref}                                               % 引用
